@@ -24,7 +24,9 @@
   </main>
   <script>
     (() => {
-      const prompt = new URLSearchParams(window.location.search).get("text");
+      const params = new URLSearchParams(window.location.search);
+      const prompt = params.get("text");
+      const shortcutName = params.get("name") || "프롬프트 보내기";
       const status = document.getElementById("status");
       const launch = document.getElementById("launch");
       const help = document.getElementById("help");
@@ -35,7 +37,7 @@
       }
 
       const shortcutUrl =
-        "shortcuts://run-shortcut?name=" + encodeURIComponent("프롬프트 보내기") +
+        "shortcuts://run-shortcut?name=" + encodeURIComponent(shortcutName) +
         "&input=text&text=" + encodeURIComponent(prompt);
 
       launch.href = shortcutUrl;
