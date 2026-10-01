@@ -1,6 +1,6 @@
 # Open Minis Bridge
 
-Telegram에서 허용되는 HTTPS 링크를 iPhone의 `Minis로 브리핑 요청하기` 단축어 실행 URL로 연결하는 정적 페이지입니다.
+Telegram에서 허용되는 HTTPS 링크를 iPhone의 `Minis에게 프롬프트 보내기` 단축어 실행 URL로 연결하는 정적 페이지입니다.
 
 ## 사용 형식
 

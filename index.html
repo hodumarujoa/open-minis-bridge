@@ -26,7 +26,7 @@
     (() => {
       const params = new URLSearchParams(window.location.search);
       const prompt = params.get("text");
-      const shortcutName = params.get("name") || "Minis로 브리핑 요청하기";
+      const shortcutName = params.get("name") || "Minis에게 프롬프트 보내기";
       const status = document.getElementById("status");
       const launch = document.getElementById("launch");
       const help = document.getElementById("help");
